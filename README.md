@@ -4,9 +4,6 @@ A minimal, monospaced blogging theme for Hugo that respects your privacy and is 
 
 smol is based on [Blank](https://github.com/Vimux/Blank) created by [Vimux](https://github.com/Vimux).
 
-
-![Screenshot](/images/tn.png)
-
 ## Features
 
 - No JavaScript
@@ -16,16 +13,16 @@ smol is based on [Blank](https://github.com/Vimux/Blank) created by [Vimux](http
 
 ## Installation
 
-In your Hugo site `themes` directory, run:
+In your Hugo site `root` directory, run:
 
 ```
-git clone https://github.com/colorchestra/smol
+git submodule add https://github.com/BenTowali/smol-catppuccin.git
 ```
 
-Next, open `config.toml` in the base of the Hugo site and ensure the theme option is set to `smol`.
+Next, open `config.toml` in the base of the Hugo site and ensure the theme option is set to `smol-catppuccin`.
 
 ```
-theme = "smol"
+theme = "smol-catppuccin"
 ```
 
 Lastly, add the following lines to your `config.toml` to set site parameters and make use of all the menu entries in the header and footer sections if you need them.
